@@ -1,3 +1,4 @@
+import Image from "next/image";
 const projects = [
  
   {
@@ -8,17 +9,17 @@ const projects = [
   {
     title: "PakWheel Clone",
     description: "clone of the popular car buying and selling platform, PakWheels, developed using Next.js and Tailwind CSS.",
-    image: "/pakWheel.jpg", // Use an image from the public folder
+    image: "/pakWheel.jpg", 
   },
   {
     title: "Responsive Website",
     description: "A sleek and responsive e-commerce website designed for selling books online. Built with Next.js and Tailwind CSS, the website features a clean interface with categorized book listings, making it easy for users to browse and shop.",
-    image: "/bookwebsite.jpg", // Use an image from the public folder
+    image: "/bookwebsite.jpg", 
   },
   {
     title: "Countdown Timer",
     description: "A Next.js and TypeScript powered website to track time with an interactive countdown feature.",
-    image: "/countdown-timer.jpg", // Use an image from the public folder
+    image: "/countdown-timer.jpg", 
   },
 ];
 
@@ -33,9 +34,11 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div key={index}
               className="bg-gray-300 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow  border-t-2 border-gray-600">
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
+                width={100}
+                height={100}
                 className="w-full h-40 object-cover "
               />
               <div className="p-4">
