@@ -9,7 +9,7 @@ const projects = [
   {
     title: "PakWheel Clone",
     description: "clone of the popular car buying and selling platform, PakWheels, developed using Next.js and Tailwind CSS.",
-    image: "/pakWheel.jpg", 
+    image: "/pakwheel.jpg", 
   },
   {
     title: "Responsive Website",
